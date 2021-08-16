@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Binary</string>
+    <string name="put_number">Put Number</string>
+    <string name="convert">Convert</string>
 </resources>
