@@ -166,13 +166,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     public void Telegram(View view)
     {
-        Uri uri = Uri.parse("https://t.me/Gerechtigkeit_Global");
+
+        Uri uri = Uri.parse("https://t.me/Java_local");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
@@ -183,4 +182,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
+
+
+
+
 }
