@@ -57,7 +57,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wall" />
+        app:srcCompat="@drawable/wall"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/Telegram"
@@ -70,7 +71,8 @@
         android:onClick="Telegram"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Instagram"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,UsingOnClickInXml" />
 
     <ImageButton
         android:id="@+id/Instagram"
@@ -83,7 +85,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,UsingOnClickInXml"
+         />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
