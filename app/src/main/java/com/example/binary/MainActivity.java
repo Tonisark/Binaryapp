@@ -24,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         Convert_btn = findViewById(R.id.Convert_btn);
         Binary Binary = new Binary();
 
+
+        //Set button alpha to zero
+        Convert_btn.setAlpha(0f);
+
+        //Animate the alpha value to 1f and set duration as 1.5 secs.
+        Convert_btn.animate().alpha(1f).setDuration(1500);
+
         Convert_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
