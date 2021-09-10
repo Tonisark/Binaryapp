@@ -1,7 +1,5 @@
 package com.example.binary;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "Please Write CAPS", Toast.LENGTH_LONG).show();
+      //  Toast.makeText(this, "Please Write CAPS", Toast.LENGTH_LONG).show();
         textView = findViewById(R.id.showBinary);
         Convert_btn = findViewById(R.id.Convert_btn);
         Binary Binary = new Binary();
@@ -35,137 +33,158 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 editText = findViewById(R.id.GetBinary);
-                if (editText.getText().toString().equals("A")) {
+                String A="A,a";
+                if (A.contains(editText.getText().toString())) {
                     //Binary A
                     Binary.setA(1000001);
                     textView.setText("--> " + Binary.getA());
                 }
-                if (editText.getText().toString().equals("B")) {
+                String B="B,b";
+                if (B.contains(editText.getText().toString())) {
                     //Binary B
                     Binary.setB(1000010);
                     textView.setText("--> " + Binary.getB());
                 }
-                if (editText.getText().toString().equals("C")) {
+                String C="C,c";
+                if (C.contains(editText.getText().toString())) {
                     //Binary C
                     Binary.setC(1000011);
                     textView.setText("--> " + Binary.getC());
-
                 }
-                if (editText.getText().toString().equals("D")) {
+                String D="D,d";
+                if (D.contains(editText.getText().toString())) {
                     //Binary D
                     Binary.setD(1000100);
                     textView.setText("--> " + Binary.getD());
-
                 }
-                if (editText.getText().toString().equals("E")) {
+                String E="E,e";
+                if (E.contains(editText.getText().toString())) {
                     //Binary E
                     Binary.setE(1000101);
                     textView.setText("--> " + Binary.getE());
                 }
-
-                if (editText.getText().toString().equals("F")) {
+                String F="F,f";
+                if (F.contains(editText.getText().toString())) {
                     //Binary F
                     Binary.setF(1000110);
                     textView.setText("--> " + Binary.getF());
                 }
-
-                if (editText.getText().toString().equals("G")) {
+                String G="G,g";
+                if (G.contains(editText.getText().toString())) {
                     //Binary G
                     Binary.setG(1000111);
                     textView.setText("--> " + Binary.getG());
                 }
-
-                if (editText.getText().toString().equals("H")) {
+                String H="H,h";
+                if (H.contains(editText.getText().toString())) {
                     //Binary H
                     Binary.setH(1001000);
                     textView.setText("--> " + Binary.getH());
                 }
-                if (editText.getText().toString().equals("I")) {
+                String I="I,i";
+                if (I.contains(editText.getText().toString())) {
                     //Binary I
                     Binary.setI(1001001);
                     textView.setText("--> " + Binary.getI());
                 }
-                if (editText.getText().toString().equals("J")) {
+                String J="J,j";
+                if (J.contains(editText.getText().toString())) {
                     //Binary J
                     Binary.setJ(1001010);
                     textView.setText("--> " + Binary.getJ());
                 }
-                if (editText.getText().toString().equals("K")) {
+                String K="K,k";
+                if (K.contains(editText.getText().toString())) {
                     //Binary K
                     Binary.setK(1001011);
                     textView.setText("--> " + Binary.getK());
                 }
-                if (editText.getText().toString().equals("L")) {
+                String L="L,l";
+                if (L.contains(editText.getText().toString())) {
                     //Binary L
                     Binary.setL(1001100);
                     textView.setText("--> " + Binary.getL());
                 }
-                if (editText.getText().toString().equals("M")) {
+                String M="M,m";
+                if (M.contains(editText.getText().toString())) {
                     //Binary M
                     Binary.setM(1001101);
                     textView.setText("--> " + Binary.getM());
                 }
-                if (editText.getText().toString().equals("N")) {
+                String N="N,n";
+                if (N.contains(editText.getText().toString())) {
                     //Binary N
                     Binary.setN(1001110);
                     textView.setText("--> " + Binary.getN());
                 }
-                if (editText.getText().toString().equals("O")) {
+                String O="O,o";
+                if (O.contains(editText.getText().toString())) {
                     //Binary O
                     Binary.setO(1001111);
                     textView.setText("--> " + Binary.getO());
                 }
-                if (editText.getText().toString().equals("P")) {
+                String P="P,p";
+                if (P.contains(editText.getText().toString())) {
                     //Binary P
                     Binary.setP(1010000);
                     textView.setText("--> " + Binary.getP());
                 }
-                if (editText.getText().toString().equals("Q")) {
+                String Q="Q,q";
+                if (Q.contains(editText.getText().toString())) {
                     //Binary Q
                     Binary.setQ(1010001);
                     textView.setText("--> " + Binary.getQ());
                 }
-                if (editText.getText().toString().equals("R")) {
+                String R="R,r";
+                if (R.contains(editText.getText().toString())) {
                     //Binary R
                     Binary.setR(1010010);
                     textView.setText("--> " + Binary.getR());
                 }
-                if (editText.getText().toString().equals("S")) {
+                String S="S,s";
+                if (S.contains(editText.getText().toString())) {
                     //Binary S
                     Binary.setS(1010011);
                     textView.setText("--> " + Binary.getS());
                 }
-                if (editText.getText().toString().equals("T")) {
+                String T="T,t";
+                if (T.contains(editText.getText().toString())) {
                     //Binary T
                     Binary.setT(1010100);
                     textView.setText("--> " + Binary.getT());
                 }
-                if (editText.getText().toString().equals("U")) {
+                String U="U,u";
+                if (U.contains(editText.getText().toString())) {
                     //Binary U
                     Binary.setU(1010101);
                     textView.setText("--> " + Binary.getU());
                 }
-                if (editText.getText().toString().equals("V")) {
+                String V="V,v";
+                if (V.contains(editText.getText().toString())) {
                     //Binary V
                     Binary.setV(1010110);
                     textView.setText("--> " + Binary.getV());
                 }
-                if (editText.getText().toString().equals("W")) {
+                String W="W,w";
+                if (W.contains(editText.getText().toString())) {
                     //Binary W
                     Binary.setW(1010111);
                     textView.setText("--> " + Binary.getW());
                 }
-                if (editText.getText().toString().equals("X")) {
+                String X="X,x";
+                if (X.contains(editText.getText().toString())) {
                     //Binary X
                     Binary.setX(1011000);
                     textView.setText("--> " + Binary.getX());
                 }
-                if (editText.getText().toString().equals("Y")) {
+                String Y="Y,y";
+                if (Y.contains(editText.getText().toString())) {
                     //Binary Y
                     Binary.setY(1011001);
                     textView.setText("--> " + Binary.getY());
                 }
-                if (editText.getText().toString().equals("Z")) {
+                String Z="Z,z";
+                if (Z.contains(editText.getText().toString())) {
                     //Binary Z
                     Binary.setZ(1011010);
                     textView.setText("--> " + Binary.getZ());

@@ -15,6 +15,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/white"
         android:ems="10"
+        android:textColor="@color/Red"
         android:textColorHint="@color/black"
         android:gravity="center"
         android:hint="@string/put_Word"
