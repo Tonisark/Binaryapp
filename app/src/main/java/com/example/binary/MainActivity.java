@@ -20,12 +20,8 @@ public class MainActivity extends AppCompatActivity {
       //  Toast.makeText(this, "Please Write CAPS", Toast.LENGTH_LONG).show();
         textView = findViewById(R.id.showBinary);
         Convert_btn = findViewById(R.id.Convert_btn);
-        Binary Binary = new Binary();
-
-
         //Set button alpha to zero
         Convert_btn.setAlpha(0f);
-
         //Animate the alpha value to 1f and set duration as 1.5 secs.
         Convert_btn.animate().alpha(1f).setDuration(1500);
 
@@ -33,166 +29,100 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 editText = findViewById(R.id.GetBinary);
-                String A="A,a";
-                if (A.contains(editText.getText().toString())) {
-                    //Binary A
-                    Binary.setA(1000001);
-                    textView.setText("--> " + Binary.getA());
+                String YY="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+                if (YY.contains(editText.getText().toString()))
+                {
+                    if (editText.getText().toString().contains("a")) { textView.setText("01100001"); }
+                    if (editText.getText().toString().contains("b")) { textView.setText("01100010"); }
+                    if (editText.getText().toString().contains("c")) { textView.setText("01100011"); }
+                    if (editText.getText().toString().contains("d")) { textView.setText("01100100"); }
+                    if (editText.getText().toString().contains("e")) { textView.setText("01100101"); }
+                    if (editText.getText().toString().contains("f")) { textView.setText("01100110"); }
+                    if (editText.getText().toString().contains("g")) { textView.setText("01100111"); }
+                    if (editText.getText().toString().contains("h")) { textView.setText("01101000"); }
+                    if (editText.getText().toString().contains("i")) { textView.setText("01101001"); }
+                    if (editText.getText().toString().contains("j")) { textView.setText("01101010"); }
+                    if (editText.getText().toString().contains("k")) { textView.setText("01101011"); }
+                    if (editText.getText().toString().contains("l")) { textView.setText("01101100"); }
+                    if (editText.getText().toString().contains("m")) { textView.setText("01101101"); }
+                    if (editText.getText().toString().contains("n")) { textView.setText("01101110"); }
+                    if (editText.getText().toString().contains("o")) { textView.setText("01101111"); }
+                    if (editText.getText().toString().contains("p")) { textView.setText("01110000"); }
+                    if (editText.getText().toString().contains("q")) { textView.setText("01110001"); }
+                    if (editText.getText().toString().contains("r")) { textView.setText("01110010"); }
+                    if (editText.getText().toString().contains("s")) { textView.setText("01110011"); }
+                    if (editText.getText().toString().contains("t")) { textView.setText("01110100"); }
+                    if (editText.getText().toString().contains("u")) { textView.setText("01110101"); }
+                    if (editText.getText().toString().contains("v")) { textView.setText("01110110"); }
+                    if (editText.getText().toString().contains("w")) { textView.setText("01110111"); }
+                    if (editText.getText().toString().contains("x")) { textView.setText("01111000"); }
+                    if (editText.getText().toString().contains("y")) { textView.setText("01111001"); }
+                    if (editText.getText().toString().contains("z")) { textView.setText("01111010"); }
+                    //Capppppppppsssssssssssss
+                    if (editText.getText().toString().contains("A")) { textView.setText("01000001"); }
+                    if (editText.getText().toString().contains("B")) { textView.setText("01000010"); }
+                    if (editText.getText().toString().contains("C")) { textView.setText("01000011"); }
+                    if (editText.getText().toString().contains("D")) { textView.setText("01000100"); }
+                    if (editText.getText().toString().contains("E")) { textView.setText("01000101"); }
+                    if (editText.getText().toString().contains("F")) { textView.setText("01000110"); }
+                    if (editText.getText().toString().contains("G")) { textView.setText("01000111"); }
+                    if (editText.getText().toString().contains("H")) { textView.setText("01001000"); }
+                    if (editText.getText().toString().contains("I")) { textView.setText("01001001"); }
+                    if (editText.getText().toString().contains("J")) { textView.setText("01001010"); }
+                    if (editText.getText().toString().contains("K")) { textView.setText("01001011"); }
+                    if (editText.getText().toString().contains("L")) { textView.setText("01001100"); }
+                    if (editText.getText().toString().contains("M")) { textView.setText("01001101"); }
+                    if (editText.getText().toString().contains("N")) { textView.setText("01001110"); }
+                    if (editText.getText().toString().contains("O")) { textView.setText("01001111"); }
+                    if (editText.getText().toString().contains("P")) { textView.setText("01010000"); }
+                    if (editText.getText().toString().contains("Q")) { textView.setText("01010001"); }
+                    if (editText.getText().toString().contains("R")) { textView.setText("01010010"); }
+                    if (editText.getText().toString().contains("S")) { textView.setText("01010011"); }
+                    if (editText.getText().toString().contains("T")) { textView.setText("01010100"); }
+                    if (editText.getText().toString().contains("U")) { textView.setText("01010101"); }
+                    if (editText.getText().toString().contains("V")) { textView.setText("01010110"); }
+                    if (editText.getText().toString().contains("W")) { textView.setText("01010111"); }
+                    if (editText.getText().toString().contains("X")) { textView.setText("01011000"); }
+                    if (editText.getText().toString().contains("Y")) { textView.setText("01011001"); }
+                    if (editText.getText().toString().contains("Z")) { textView.setText("01011010"); }
+
                 }
-                String B="B,b";
-                if (B.contains(editText.getText().toString())) {
-                    //Binary B
-                    Binary.setB(1000010);
-                    textView.setText("--> " + Binary.getB());
-                }
-                String C="C,c";
-                if (C.contains(editText.getText().toString())) {
-                    //Binary C
-                    Binary.setC(1000011);
-                    textView.setText("--> " + Binary.getC());
-                }
-                String D="D,d";
-                if (D.contains(editText.getText().toString())) {
-                    //Binary D
-                    Binary.setD(1000100);
-                    textView.setText("--> " + Binary.getD());
-                }
-                String E="E,e";
-                if (E.contains(editText.getText().toString())) {
-                    //Binary E
-                    Binary.setE(1000101);
-                    textView.setText("--> " + Binary.getE());
-                }
-                String F="F,f";
-                if (F.contains(editText.getText().toString())) {
-                    //Binary F
-                    Binary.setF(1000110);
-                    textView.setText("--> " + Binary.getF());
-                }
-                String G="G,g";
-                if (G.contains(editText.getText().toString())) {
-                    //Binary G
-                    Binary.setG(1000111);
-                    textView.setText("--> " + Binary.getG());
-                }
-                String H="H,h";
-                if (H.contains(editText.getText().toString())) {
-                    //Binary H
-                    Binary.setH(1001000);
-                    textView.setText("--> " + Binary.getH());
-                }
-                String I="I,i";
-                if (I.contains(editText.getText().toString())) {
-                    //Binary I
-                    Binary.setI(1001001);
-                    textView.setText("--> " + Binary.getI());
-                }
-                String J="J,j";
-                if (J.contains(editText.getText().toString())) {
-                    //Binary J
-                    Binary.setJ(1001010);
-                    textView.setText("--> " + Binary.getJ());
-                }
-                String K="K,k";
-                if (K.contains(editText.getText().toString())) {
-                    //Binary K
-                    Binary.setK(1001011);
-                    textView.setText("--> " + Binary.getK());
-                }
-                String L="L,l";
-                if (L.contains(editText.getText().toString())) {
-                    //Binary L
-                    Binary.setL(1001100);
-                    textView.setText("--> " + Binary.getL());
-                }
-                String M="M,m";
-                if (M.contains(editText.getText().toString())) {
-                    //Binary M
-                    Binary.setM(1001101);
-                    textView.setText("--> " + Binary.getM());
-                }
-                String N="N,n";
-                if (N.contains(editText.getText().toString())) {
-                    //Binary N
-                    Binary.setN(1001110);
-                    textView.setText("--> " + Binary.getN());
-                }
-                String O="O,o";
-                if (O.contains(editText.getText().toString())) {
-                    //Binary O
-                    Binary.setO(1001111);
-                    textView.setText("--> " + Binary.getO());
-                }
-                String P="P,p";
-                if (P.contains(editText.getText().toString())) {
-                    //Binary P
-                    Binary.setP(1010000);
-                    textView.setText("--> " + Binary.getP());
-                }
-                String Q="Q,q";
-                if (Q.contains(editText.getText().toString())) {
-                    //Binary Q
-                    Binary.setQ(1010001);
-                    textView.setText("--> " + Binary.getQ());
-                }
-                String R="R,r";
-                if (R.contains(editText.getText().toString())) {
-                    //Binary R
-                    Binary.setR(1010010);
-                    textView.setText("--> " + Binary.getR());
-                }
-                String S="S,s";
-                if (S.contains(editText.getText().toString())) {
-                    //Binary S
-                    Binary.setS(1010011);
-                    textView.setText("--> " + Binary.getS());
-                }
-                String T="T,t";
-                if (T.contains(editText.getText().toString())) {
-                    //Binary T
-                    Binary.setT(1010100);
-                    textView.setText("--> " + Binary.getT());
-                }
-                String U="U,u";
-                if (U.contains(editText.getText().toString())) {
-                    //Binary U
-                    Binary.setU(1010101);
-                    textView.setText("--> " + Binary.getU());
-                }
-                String V="V,v";
-                if (V.contains(editText.getText().toString())) {
-                    //Binary V
-                    Binary.setV(1010110);
-                    textView.setText("--> " + Binary.getV());
-                }
-                String W="W,w";
-                if (W.contains(editText.getText().toString())) {
-                    //Binary W
-                    Binary.setW(1010111);
-                    textView.setText("--> " + Binary.getW());
-                }
-                String X="X,x";
-                if (X.contains(editText.getText().toString())) {
-                    //Binary X
-                    Binary.setX(1011000);
-                    textView.setText("--> " + Binary.getX());
-                }
-                String Y="Y,y";
-                if (Y.contains(editText.getText().toString())) {
-                    //Binary Y
-                    Binary.setY(1011001);
-                    textView.setText("--> " + Binary.getY());
-                }
-                String Z="Z,z";
-                if (Z.contains(editText.getText().toString())) {
-                    //Binary Z
-                    Binary.setZ(1011010);
-                    textView.setText("--> " + Binary.getZ());
-                }
+
             }
         });
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void Telegram(View view)
     {
@@ -201,15 +131,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
-
     public void Instagram(View view)
     {
         Uri uri = Uri.parse("https://www.instagram.com/tonymanvip/");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
-
-
-
 
 }
